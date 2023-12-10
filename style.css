@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@400;500&family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Nova+Square&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700&family=Open+Sans:wght@400;600;700&family=Orbitron:wght@400;500;600;700&family=Pacifico&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Roboto+Condensed:wght@300;400;700&family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kalnia', serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://linguava.com/wp-content/uploads/2017/01/bg-buildings.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size: 50px;
+    color: white;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+
+.entry{
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+#endDate{
+    background-color: transparent;
+    /* border: none; */
+    width: 490px;
+    padding: 10px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0px 10px;
+}
+
+button{
+    font-size: 18px;
+    background-color: transparent;
+    padding: 15px 20px;
+    color: white;
+    border: none;
+    margin: 0px 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.inputs{
+    display: flex;
+    padding: 20px 0px;
+}
+.inputs label{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    font-size: 20px;
+}
+.inputs input{
+    height: 90px;
+    width: 80px;
+    margin: 0px 30px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 35px;
+    background: rgba(128, 128, 128, 0.3);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    border: none;
+    color: white;
+}
+.inputs input::placeholder{
+    color: rgba(255, 255, 255, 0.708);
+}
+
+
+
+@media screen and (max-width: 800px) {
+    h1{
+        font-size: 40px;
+    }
+    .entry{
+        flex-direction: column;
+    }
+    button{
+        margin: 15px 0px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    h1{
+        font-size: 30px;
+    }
+    .entry{
+        flex-direction: column;
+    }
+    button{
+        margin: 15px 0px;
+        font-size: 16px;
+    }
+    #endDate{
+        width: 300px;
+        padding: 8px;
+        font-size: 18px;
+        margin: 10px 0px;
+    }
+    .inputs label{
+        font-size: 15px;
+    }
+    .inputs input{
+        height: 80px;
+        width: 70px;
+        font-size: 25px;
+        margin: 0px 10px;
+    }
+    
+}
+@media screen and (max-width: 400px) {
+    h1{
+        font-size: 25px;
+        padding-bottom: 0px;
+    }
+    button{
+        margin: 15px 0px;
+        padding: 10px;
+        font-size: 14px;
+    }
+    .inputs label{
+        font-size: 14px;
+    }
+    .inputs input{
+        height: 70px;
+        width: 60px;
+        font-size: 22px;
+        margin: 0px 10px;
+    }
+}
+@media screen and (max-width: 300px) {
+    h1{
+        font-size: 22px;
+        padding-bottom: 0px;
+    }
+    #endDate{
+        width: 250px;
+        font-size: 14px;
+    }
+    button{
+        margin: 15px 0px;
+        padding: 10px;
+        font-size: 13px;
+    }
+    .inputs label{
+        font-size: 12px;
+    }
+    .inputs input{
+        height: 60px;
+        width: 50px;
+        font-size: 18px;
+        margin: 0px 8px;
+    }
+}
+

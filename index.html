@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Countdown ends in</h1>
+        <!-- <h2 id="endDate">12 December 2022 1:10PM</h2> -->
+        <div class="entry">
+            <input type="text" placeholder="dd Month yyyy hh:mm AM/PM" id=endDate>
+            <button id="start" onclick="start()">START</button>
+            <button id="reset" onclick="reset()">RESET</button>
+        </div>
+        <div class="inputs">
+            <label for="days">
+                <input type="text" placeholder="00" id="days" readonly><br>
+                Days
+            </label>
+            <label for="hours">
+                <input type="text" placeholder="00" id="hours" readonly><br>
+                Hours
+            </label>
+            <label for="minutes">
+                <input type="text" placeholder="00" id="minutes" readonly><br>
+                Minutes
+            </label>
+            <label for="seconds">
+                <input type="text" placeholder="00" id="seconds" readonly><br>
+                Seconds
+            </label>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
